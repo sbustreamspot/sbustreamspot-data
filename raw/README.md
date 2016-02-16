@@ -1,4 +1,4 @@
-# StreamSpot Data: Raw
+# Raw Data
 
 The raw flow-graph data for StreamSpot has been provided by
 [Venkat N. Venkatakrishnan][1], [Sadegh Momeni][2] and team at the
