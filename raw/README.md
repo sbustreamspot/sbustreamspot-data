@@ -18,7 +18,9 @@ from the following six scenarios:
    5. Download (graph ID's 400 - 499)
    6. CNN (graph ID's 500 - 599)
 
-`edges.csv`:
+The data is spread across the following files:
+
+### `edges.csv`
 
 Each line corresponds to an edge in some graph, and is of the format:
 
@@ -34,7 +36,7 @@ source id, source type, destination id, destination type, edge type, timestamp, 
    * `timestamp`: Time of this event in UNIX epoch format.
    * `graph id`: Identifies which graph this edge is from.
 
-`process.csv`, `file.csv`:
+### `process.csv`, `file.csv`
 
 Each line contains metadata corresponding to a process or file.
 
