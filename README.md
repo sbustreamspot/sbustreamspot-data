@@ -32,7 +32,8 @@ which performs the following:
    1. Each node and edge type is mapped to a single character.
    2. Consecutive edges between the same pair of nodes corresponding to
       block-by-block file reads are collapsed into a single edge.
-   3. The timestamp field is removed (raw edges are sorted by timestamp).
+   3. Node ID's are incremented by 1 (so ID's of `-1` become 0).
+   4. The timestamp field is removed (raw edges are sorted by timestamp).
 
 `preprocess.py` is run as: `python preprocess.py <raw edges file>`
 
