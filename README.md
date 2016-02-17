@@ -7,6 +7,14 @@ from `ALL` by picking graph ID's having scenarios as follows:
    * `YDC`: YouTube, Download, CNN
    * `GFC`: GMail, VGame, CNN 
 
+## Format
+
+Tab-separated file with one edge on each line in the following format:
+
+```
+source-id	source-type	destination-id	destination-type	edge-type	graph-id
+```
+
 Graph ID's correspond to scenarios as follows:
    
    1. YouTube (graph ID's 0 - 99)
@@ -15,14 +23,6 @@ Graph ID's correspond to scenarios as follows:
    4. Drive-by-download attack (graph ID's 300 - 399)
    5. Download (graph ID's 400 - 499)
    6. CNN (graph ID's 500 - 599)
-
-## Format
-
-Tab-separated file with one edge on each line in the following format:
-
-```
-source-id	source-type	destination-id	destination-type	edge-type	graph-id
-```
 
 ## Construction
 
