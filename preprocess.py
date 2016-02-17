@@ -1,3 +1,6 @@
+# Copyright 2016 Emaad Ahmed Manzoor
+# License: Apache License, Version 2.0
+
 import sys
 
 map = {'process': 'a',
