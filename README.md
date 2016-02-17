@@ -16,11 +16,15 @@ Graph ID's correspond to scenarios as follows:
    5. Download (graph ID's 400 - 499)
    6. CNN (graph ID's 500 - 599)
 
-## Construction
+## Format
 
-The raw flow-graph data for StreamSpot was provided by
-[Venkat N. Venkatakrishnan][1], [Sadegh Momeni][2] and team at the
-University of Illinois - Chicago.
+Tab-separated file with one edge on each line in the following format:
+
+```
+source-id	source-type	destination-id	destination-type	edge-type	graph-id
+```
+
+## Construction
 
 The `ALL` dataset was extracted from the raw flow-graph data using `preprocess.py`,
 which performs the following:
@@ -29,6 +33,14 @@ which performs the following:
    2. Consecutive edges between the same pair of nodes corresponding to
       block-by-block file reads are collapsed into a single edge.
    3. The timestamp field is removed (raw edges are sorted by timestamp).
+
+`preprocess.py` is run as: `python preprocess.py <raw edges file>`
+
+## Credits
+
+The raw flow-graph data for StreamSpot was provided by
+[Venkat N. Venkatakrishnan][1], [Sadegh Momeni][2] and team at the
+University of Illinois - Chicago.
 
 ## Contact
 
